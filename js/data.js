@@ -1,0 +1,326 @@
+const pizzas = [
+    {
+        pic: 'ChessyChicken.jpg',
+        name: 'Chessy Chicken',
+        type: '',
+        text: 'Pomidorai, mocarelos sūris, vištiena, sūrio padažas',
+        price: 'nuo 7,50€',
+    },
+    {
+        pic: 'Crazy.jpg',
+        name: 'Crazy',
+        type: 'chili.png',
+        text: 'Saldžiarūgštis padažas, vištiena, mocarelos sūris, saliamis, picų padažas',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: 'Roayl.jpg',
+        name: 'Royal',
+        type: 'chili.png',
+        text: 'Pievagrybiai, mocarelos sūris, kumpis, jautiena, vištiena, raudonieji svogunai, picų padažas, čili padažas',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: '4seasons.jpg',
+        name: '4 seasons',
+        type: '',
+        text: 'Pievagrybiai, pomidorai, mocarelos sūris, kumpis, saliamis, picų padažas, oregano prieskoniai, fetos suris',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'assorti.jpg',
+        name: 'Assorti',
+        type: '',
+        text: 'Pievagrybiai, pomidorai, mocarelos sūris, kumpis, saliamis, žalioji paprika, picų padažas',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'ChickenBBQ.jpg',
+        name: 'Chicken BBQ',
+        type: '',
+        text: 'Mocarelos sūris, šoninė, vištiena, raudonieji svogunai, picų padažas, bbq padažas',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'Mexican.jpg',
+        name: 'Mexican',
+        type: 'chili.png',
+        text: 'Pievagrybiai, pomidorai, mocarelos sūris, saliamis, vištiena, žalioji paprika, jalapeno griežinėliai, picų padažas',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: 'Pepperoni.jpg',
+        name: 'Pepperoni',
+        type: 'chili.png',
+        text: 'Mocarelos sūris, saliamis, picų padažas',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: 'Champion.jpg',
+        name: 'Champion',
+        type: 'chili.png',
+        text: 'Pievagrybiai, mocarelos sūris, kumpis, picų padažas',
+        price: 'nuo 6,50€', 
+    },
+    {
+        pic: 'Ranch.jpg',
+        name: 'Ranch',
+        type: '',
+        text: 'Česnakinis padažas, česnakai, pomidorai, mocarelos sūris, kumpis, vištiena',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: 'Cheesburger.jpg',
+        name: 'Cheesburger',
+        type: '',
+        text: 'Mocarelos sūris, pomidorai, šoninė, jautiena, raudonieji svogūnai, marinuoti agurkai, picų padažas',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'Hawaiian.jpg',
+        name: 'Hawaiian',
+        type: '',
+        text: 'Kumpis, mocarelos sūris, ananasai, picų padažas',
+        price: 'nuo 7,50€',  
+    },
+    {
+        pic: 'Spicy.jpg',
+        name: 'Spicy',
+        type: 'chili.png',
+        text: 'Čili padažas, medžiotojų dešrelės, mocarelos sūris, saliamis, jalapeno griežinėliai, picų padažas',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'Margherita.jpg',
+        name: 'Margherita',
+        type: 'vegetarian.png',
+        text: 'Pomidorai, mocarelos sūris, picų padažas, oregano prieskoniai',
+        price: 'nuo 6,50€', 
+    },
+    {
+        pic: 'Seafood.jpg',
+        name: 'Seafood',
+        type: '',
+        text: 'Mocarelos sūris, šoninė, vištiena, krevetės, picų padažas',
+        price: 'nuo 8,50€', 
+    },
+    {
+        pic: 'TheMeats.jpg',
+        name: 'The Meats',
+        type: 'chili.png',
+        text: 'Medžiotojų dešrelės, mocarelos sūris, šoninė, kumpis, jautiena, picų padažas',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'Vegetarian.jpg',
+        name: 'Vegetarian',
+        type: 'vegetarian.png',
+        text: 'Pievagrybiai, pomidorai, mocarelos sūris, raudonieji svogunai, žalioji paprika, juodosios alyvuogės, marinuoti agurkai, picų padažas, oregano prieskoniai, fetos sūris',
+        price: 'nuo 7,50€', 
+    },
+    {
+        pic: 'Cheese.jpg',
+        name: 'Cheese',
+        type: 'vegetarian.png',
+        text: 'Mocarelos sūris, picų padažas, oregano prieskoniai, fetos suгis',
+        price: 'nuo 6,50€', 
+    },
+    {
+        pic: 'PicaPie.jpg',
+        name: 'Picos pyragas',
+        type: 'vegetarian.png',
+        text: 'Bruknės, ananasai, sutirštintas pienas',
+        price: 'nuo 6,50€', 
+    },
+]
+
+const snacks = [
+    {
+        pic: 'Brusketa.jpg',
+        name: 'Brusketa su pomidorais, 25cm',
+        text: '',
+        price: '5,50€',
+    },
+    {
+        pic: 'Cezario.jpg',
+        name: 'Cezario salotos',
+        text: 'Vištiena, vynuoginiai pomidorai, gūžinės salotos Iceberg, skrebučiai, parmezano sūris, bazilikai ir cezario padažas',
+        price: '3,50€',
+    },
+    {
+        pic: 'Graikiskos.jpg',
+        name: 'Graikiškos salotos',
+        text: 'Vynuoginiai pomidorai, gūžinės salotos Iceberg, Feta sūris, agurkai, juodosios alyvuogės, paprikos, raudonėliai ir alyvuogių aliejus',
+        price: '3,50€',
+    },
+    {
+        pic: 'Kebabas.jpg',
+        name: 'Dodsteris',
+        text: 'Dodsterai yra unikalus produktas, mūsų išradimas. Atraskite dodsterus. Tai kai kas naujo!',
+        price: '2,50€',
+    },
+    {
+        pic: 'Vistiena7.jpg',
+        name: 'Vištienos kepsneliai, 7 vnt',
+        text: 'Krosnyje kepti vištienos gabaliukai',
+        price: '2,75€',
+    },
+    {
+        pic: 'Vistiena14.jpg',
+        name: 'Vištienos kepsneliai, 14 vnt',
+        text: 'Krosnyje kepti vištienos gabaliukai',
+        price: '4,50€',
+    },
+    {
+        pic: 'Buffalo.jpg',
+        name: 'Aštrūs vištienos sparneliai Buffalo, 7 vnt',
+        text: 'Skanūs vištienos sparneliai.',
+        price: '4,50€',
+    },
+    {
+        pic: 'Fries.jpg',
+        name: 'Krosnyje keptos bulvytės',
+        text: 'Bulvytės 300 g',
+        price: '2,50€',
+    },
+    {
+        pic: 'Corn.jpg',
+        name: 'Kukurūzai, 2 vnt',
+        text: 'Dvi sultingos saldžios kukurūzų burbuolės. Pateikiamos su sviestu ir druska.',
+        price: '4,00€',
+    },
+    {
+        pic: 'Pancake.jpg',
+        name: 'Krosnyje kepti bulviniai blyneliai, 8 vnt',
+        text: 'Krosnyje kepti bulviniai blyneliai',
+        price: '2,95€',
+    },
+    {
+        pic: 'BandeleBrukne.jpg',
+        name: 'Bandelės su bruknėmis, 16 vnt',
+        text: 'Bandelės su bruknėmis',
+        price: '2,50€',
+    },
+    {
+        pic: 'BandeleCinamom.jpg',
+        name: 'Bandelės su cinamonu, 16 vnt',
+        text: 'Bandelės su cinamonu',
+        price: '2,25€',
+    },
+    
+]
+
+const desserts = [
+    {
+        pic: 'Cheesecake.jpg',
+        name: 'Cheesecake',
+        type: 'vegetarian.png',
+        text: 'Dviejų sluoksnių švelnaus skonio sūrio tortas, iškeptas pagal originalų receptą. Sūrio sluoksnis pagamintas iš minkšto ricotta sūrio, viršus dekoruotas karamelizuotais trupiniais.',
+        price: '2,00€',
+    },
+    {
+        pic: 'Mufinas.jpg',
+        name: 'Šviesus mufinas su šokolado lašais',
+        type: '',
+        text: 'Nuostabaus skonio keksiukas su šokolado lašais - idealus pasirinkimas tiek studentui, tiek prezidentui!',
+        price: '1,50€', 
+    },
+]
+
+const drinks = [
+    {
+        pic: 'CidoOrange.jpg',
+        name: 'Apelsinų sultys CIDO (100%), 0,3 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'CidoApple.jpg',
+        name: 'Obuolių sultys CIDO (100%), 0,3 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'CidoTomato.jpg',
+        name: 'Pomidorų sultys CIDO (100%), 0,3 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'CocaCola.jpg',
+        name: 'Coca-Cola, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'CocaColaZero.jpg',
+        name: 'Coca-Cola, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'Fanta.jpg',
+        name: 'Fanta, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'Sprite.jpg',
+        name: 'Sprite, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'FuzeteaLemon.jpg',
+        name: 'Fuzetea Lemon, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'FuzeteaPeach.jpg',
+        name: 'Fuzetea Peach, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'FuzeteaGreenCitrus.jpg',
+        name: 'Fuzetea Green Citrus, 0,5 l',
+        price: '1,50€',
+    },
+    {
+        pic: 'CocaCola1L.jpg',
+        name: 'Coca-Cola, 1 l',
+        price: '2,50€',
+    },
+    {
+        pic: 'WaterStill.jpg',
+        name: 'Negazuotas vanduo, 0,5 l',
+        price: '1,30€',
+    },
+    {
+        pic: 'WaterSparkling.jpg',
+        name: 'Gazuotas vanduo, 0,5 l',
+        price: '1,30€',
+    },
+    {
+        pic: 'CidoMulti1L.jpg',
+        name: 'Įvairių vaisių gėrimas CIDO, 1 l',
+        price: '2,50€',
+    },
+    {
+        pic: 'CidoOrange1L.jpg',
+        name: 'Obuolių sultys CIDO 100%, 1 l',
+        price: '2,50€',
+    },
+    {
+        pic: 'CidoTomato1L.jpg',
+        name: 'Pomidorų sultys CIDO, 100%, 1 l',
+        price: '2,50€',
+    },
+    {
+        pic: 'GoBaltas.jpg',
+        name: 'Nealkoholinis BALTAS alus (0%), 0,5 l',
+        price: '2,00€',
+    },
+    {
+        pic: 'GoPilsner.jpg',
+        name: 'Nealkoholinis šviesusis alus (0%), 0,5 l',
+        price: '2,00€',
+    },
+    {
+        pic: 'Radler.jpg',
+        name: 'Nealkoholinis kokteilis RADLER, 0,5 l',
+        price: '2,00€',
+    },
+]

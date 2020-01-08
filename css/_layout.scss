@@ -1,0 +1,394 @@
+header{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+        .nav-bar {
+            display: inline-block;
+                .logo-pic {
+                    display: inline-block;
+                    
+                        .headers-logo {
+                            img {
+                            max-height: 80px;
+                            margin: 10px 80px;
+                            }
+                        }
+                }
+                .links {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin-top: 35px;
+                    margin-left: 200px;
+                        .pizza {
+                            @include nav-text()
+                        }
+                        .snacks {
+                            @include nav-text()
+                        }
+                        .deserts {
+                            @include nav-text()
+                        }
+                        .drinks {
+                            @include nav-text()
+                        }
+                        .kontaktai {
+                            @include nav-text()
+                        }
+                        
+                    }
+            .basket {
+                display: inline-block;
+                // float: right;
+                margin-left: 200px;
+    
+                    .fa {
+                        display: inline-block;
+                        color: $yellowPizza;
+                        font-size: 30px;
+                        line-height: 30px;
+                        margin-top: 35px;
+                        // margin-left: 30px;
+                    }
+                }
+}}
+
+.hero {
+    display: inline-block;
+    width: 100%;
+    // margin-top: 100px;
+        .hero-photo {
+            display: flex;
+            width: 100%;
+            height: 720px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            
+                .hero-text {
+                    top: 50px;
+                    right: 40px;
+                    color: #ffffff;
+                    position: absolute;
+                    margin-top: 100px;
+                   
+                        h1 {
+                            font-size: 90px;
+                            text-shadow: 2px 2px 4px #000000;                          
+                        }
+                        h5 {
+                            font-size: 50px;
+                            text-shadow: 2px 2px 4px #000000;
+                            float: right; 
+                }
+               
+        }
+}}
+main {
+    display: inline-block;
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+    margin-top: 30px;
+        .pizza-block {
+            display: inline-block;
+            width: 100%;
+            h2 {
+                display: inline-block;
+                width: 100%;
+                font-size: 50px;
+                color: $bluePizza;
+            }
+            .pizza-list {
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                margin-top: 15px;
+                                                     
+                        .pizza-photo {
+                            display: inline-block;
+                            overflow: hidden;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                        }
+                        h4 {
+                            display: inline-block;
+                            width: 70%;
+                            font-size: 30px;
+                            text-align: left;
+                            color: $yellowPizza;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            // margin-left: 20px;
+                        }
+                        .pizza-type {
+                            display: inline-block;
+                            height: 30px;
+                            width: auto;
+                            margin-top: 15px;
+                            text-align: left;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80%;
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        .pizza-price {
+                            display: inline-block;
+                            width: 50%;
+                            font-size: 25px;
+                            color: $bluePizza;
+                            text-align: left;
+                            margin: 10px;
+                            font-weight: 600;
+                        }
+                        .order-button {
+                            display: inline-block;
+                            font-size: 20px;
+                            color: $yellowPizza;
+                            padding: 5px 10px;
+                            border: solid 1px $yellowPizza;
+                            border-radius: 5px;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+                            margin-top: 10px;;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+            }
+
+        }
+        .snacks-block {
+            display: inline-block;
+            width: 100%;
+            margin-top: 30px;
+            h2 {
+                display: inline-block;
+                width: 100%;
+                font-size: 50px;
+                color: $bluePizza;
+            }
+            .snacks-list {
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                margin-top: 15px;
+                                                     
+                        .snack-photo {
+                            display: inline-block;
+                            overflow: hidden;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                        }
+                        h4 {
+                            display: inline-block;
+                            width: 70%;
+                            font-size: 30px;
+                            text-align: left;
+                            color: $yellowPizza;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            // margin-left: 20px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80%;
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        .snack-price {
+                            display: inline-block;
+                            width: 50%;
+                            font-size: 25px;
+                            color: $bluePizza;
+                            text-align: left;
+                            margin: 10px;
+                            font-weight: 600;
+                        }
+                        .order-button {
+                            display: inline-block;
+                            font-size: 20px;
+                            color: $yellowPizza;
+                            padding: 5px 10px;
+                            border: solid 1px $yellowPizza;
+                            border-radius: 5px;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+                            margin-top: 10px;;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+            }
+
+        }
+        .deserts-block {
+            display: inline-block;
+            width: 100%;
+            margin-top: 30px;
+            h2 {
+                display: inline-block;
+                width: 100%;
+                font-size: 50px;
+                color: $bluePizza;
+            }
+            .deserts-list {
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                margin-top: 15px;
+                                                     
+                        .desert-photo {
+                            display: inline-block;
+                            overflow: hidden;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                        }
+                        h4 {
+                            display: inline-block;
+                            width: 70%;
+                            font-size: 30px;
+                            text-align: left;
+                            color: $yellowPizza;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            // margin-left: 20px;
+                        }
+                        .pizza-type {
+                            display: inline-block;
+                            height: 30px;
+                            width: auto;
+                            margin-top: 15px;
+                            text-align: left;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80%;
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        .desert-price {
+                            display: inline-block;
+                            width: 50%;
+                            font-size: 25px;
+                            color: $bluePizza;
+                            text-align: left;
+                            margin: 10px;
+                            font-weight: 600;
+                        }
+                        .order-button {
+                            display: inline-block;
+                            font-size: 20px;
+                            color: $yellowPizza;
+                            padding: 5px 10px;
+                            border: solid 1px $yellowPizza;
+                            border-radius: 5px;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+                            margin-top: 10px;;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+            }
+
+        }
+        .drinks-block {
+            display: inline-block;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            h2 {
+                display: inline-block;
+                width: 100%;
+                font-size: 50px;
+                color: $bluePizza;
+            }
+            .drinks-list {
+                display: inline-block;
+                width: 20%;
+                text-align: center;
+                margin-top: 15px;
+                
+                         h4 {
+                            display: inline-block;
+                            width: 70%;
+                            font-size: 28px;
+                            text-align: center;
+                            color: $yellowPizza;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            // min-height: 100px;
+
+                        }                            
+                        .drinks-photo {
+                            display: inline-block;
+                            overflow: hidden;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                        }
+                        .drinks-price {
+                            display: inline-block;
+                            width: 40%;
+                            font-size: 25px;
+                            color: $bluePizza;
+                            text-align: center;
+                            margin: 10px;
+                            margin-left: 15px;
+                            font-weight: 600;
+                        }
+                        .order-button {
+                            display: inline-block;
+                            font-size: 20px;
+                            color: $yellowPizza;
+                            padding: 5px 10px;
+                            border: solid 1px $yellowPizza;
+                            border-radius: 5px;
+                            // margin-right: 5px;
+                            transition: transform ease 1s;
+                            cursor: pointer;
+                            margin-top: 10px;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+            }
+
+        }
+}

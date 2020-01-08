@@ -1,0 +1,116 @@
+@media (max-width: 1300px) {
+    header {
+        .nav-bar {
+            .links {
+                margin-left: 50px;
+            }
+            .basket {
+                margin-left: 50px;
+            }
+        }
+    }
+    main {
+        width: 1000px;
+        margin-left: calc(50% - 500px);
+            .pizza-block {
+                .pizza-list {
+                    width: 33.3%;
+                }
+            }
+            .snacks-block {
+                .snacks-list {
+                    width: 33.3%;
+                }
+            }
+            .deserts-block {
+                .deserts-list {
+                    width: 33.3%;
+                }
+            }
+            .drinks-block {
+                .drinks-list {
+                    width: 25%;
+                }
+            }    
+    }
+    footer {
+        .left-side {
+            margin-left: 20px;
+            .adresas {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        .right-side {
+            width: 40%;
+           .mapouter {
+               width: 550px;
+               .gmap_canvas {
+                   width: 550px;
+                   iframe {
+                       width: 550px;
+                       text-align: left;
+                   }
+               }
+           }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        .nav-bar {
+            .links {
+                margin-left: 20px;
+            }
+            .basket {
+                margin-left: 20px;
+            }
+        }
+    }
+    main {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+            .pizza-block {
+                .pizza-list {
+                    width: 33.3%;
+                        .pizza-photo {
+                            width: 80%;
+                            height: auto;
+                        }
+                }
+            }
+            .snacks-block {
+                .snacks-list {
+                    width: 33.3%;
+                        .snack-photo {
+                            width: 80%;
+                            height: auto;
+                        }
+                }
+            }
+            .deserts-block {
+                .deserts-list {
+                    width: 33.3%;
+                        .desert-photo {
+                            width: 80%;
+                            height: auto;
+                        }
+                }
+            }
+            .drinks-block {
+                .drinks-list {
+                    width: 25%;
+                        .drinks-photo {
+                            width: 80%;
+                            height: auto;
+                        }
+                }
+            }    
+    }
+}
+
+@media (max-width: 1000px) {
+
+    
+}
